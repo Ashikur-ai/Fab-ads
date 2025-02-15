@@ -5,6 +5,9 @@ import visa from "@/assets/icons/visa.png";
 import bank from '@/assets/icons/banktransfer.png'
 import iban from '@/assets/icons/iban.png'
 import mastercard from '@/assets/icons/mastercard.png'
+import { SiVisa } from 'react-icons/si';
+import { RiBankCard2Line, RiBankFill } from 'react-icons/ri';
+import { FaCcMastercard } from 'react-icons/fa';
 
 
 const Payments = () => {
@@ -18,19 +21,20 @@ const Payments = () => {
           <p className="text-2xl font-semibold text-center my-2">Contact us to pay using this payment methods</p>
           <div className="flex justify-around my-4">
             <div className="">
-              <img src={visa} className='w-12' alt="" />
+              <SiVisa className='text-4xl' />
+
             </div>
 
             <div className="">
-              <img src={bank} className='w-12' alt="" />
+              <RiBankFill className='text-4xl' />
             </div>
 
             <div className="">
-              <img src={iban} className='w-12' alt="" />
+              <RiBankCard2Line className='text-4xl' />
             </div>
 
             <div className="">
-              <img src={mastercard} className='w-12' alt="" />
+              <FaCcMastercard className='text-4xl' />
             </div>
           </div>
         </div>

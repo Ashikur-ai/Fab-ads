@@ -44,10 +44,11 @@ const Navbar = () => {
         <nav className="hidden md:flex md:ml-auto items-center text-base text-[var(--secondary-color)] justify-center">
           <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Home</Link>
           <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Contact</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Guideline</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Login</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold text-2xl flex items-center gap-2" href="#"> <FaCartShopping /></Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Privacy</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Terms Conditions</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Refund Policy</Link>
+          {/* <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link> */}
+          {/* <Link className="mr-5 hover:text-gray-900 font-semibold text-2xl flex items-center gap-2" href="#"> <FaCartShopping /></Link> */}
           
         </nav>
 
@@ -62,9 +63,11 @@ const Navbar = () => {
         <nav className='flex flex-col space-y-4 text-2xl justify-center text-center items-center text-[var(--secondary-color)]'>
           <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Home</Link>
           <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Contact</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Guideline</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Login</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Privacy</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Terms Conditions</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Refund Policy</Link>
+
+          {/* <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link> */}
        </nav>
       </div>
 
