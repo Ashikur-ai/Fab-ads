@@ -2,7 +2,7 @@ import fb from "@/assets/icons/facebook.png"
 import verified from "@/assets/icons/verify.png"
 import insta from "@/assets/icons/instagram.png"
 import gmail from "@/assets/icons/gmail.png"
-
+import whatsapp from "@/assets/icons/whatsapp.png"
 const categories = [
   {
     id: 1,
@@ -56,9 +56,15 @@ const categories = [
   },
   {
     id: 11,
-    name: "Email Accounts",
-    icon: gmail,
+    name: "Whatsapp API",
+    icon: whatsapp,
   },
+  {
+    id: 12,
+    name: "High Threshold",
+    icon: verified
+  }
+ 
 ];
 
 export default categories;
