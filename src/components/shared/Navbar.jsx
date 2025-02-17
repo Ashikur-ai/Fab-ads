@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '@/assets/icons/logo.png';
-import { FaWallet } from 'react-icons/fa';
+import { FaTelegram, FaWallet, FaWhatsapp } from 'react-icons/fa';
 import { FaCartShopping } from 'react-icons/fa6';
 
 const Navbar = () => {
@@ -9,13 +9,47 @@ const Navbar = () => {
 
   return (
     <header className="text-gray-600 body-font shadow-md">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <Link className="flex font-bold items-center text-blue-600 mb-4 md:mb-0">
-          <div className="bg-white rounded-full shadow-sm">
-            <img src={logo} alt="" className='w-12' />
+      <div className=" mx-auto flex justify-between  p-5 flex-col md:flex-row items-center">
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex  items-center text-base text-[var(--secondary-color)] justify-center ">
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Home</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Contact</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Privacy</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Terms Conditions</Link>
+          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Refund Policy</Link>
+          {/* <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link> */}
+          {/* <Link className="mr-5 hover:text-gray-900 font-semibold text-2xl flex items-center gap-2" href="#"> <FaCartShopping /></Link> */}
+
+        </nav>
+
+        {/* logo  */}
+        <div className=" md:mr-40">
+          <Link className="flex font-bold items-center text-blue-600 md:mb-0">
+            <div className="bg-white rounded-full shadow-sm mb-4">
+              <img src={logo} alt="" className='w-12' />
+            </div>
+            <span className="ml-3 text-3xl">Fab-Ads</span>
+          </Link>
+       </div>
+
+        {/* button  */}
+        <div className=" flex-wrap gap-1 hidden md:flex">
+          <div className="flex justify-center ">
+            <button className="inline-flex text-black  bg-gray-200 border-0 py-2 px-2 md:px-4  focus:outline-none hover:bg-indigo-600 rounded-xl text-[16px] items-center gap-2 justify-between">
+              <FaTelegram className='text-xl' />
+              Telegram
+            </button>
           </div>
-          <span className="ml-3 text-3xl">Fab-Ads</span>
-        </Link>
+
+          <div className="flex justify-center ">
+            <button className="inline-flex text-white  bg-[var(--primary-color)] border-0 py-2 px-2 md:px-4  focus:outline-none hover:bg-indigo-600 rounded-xl text-[16px] items-center gap-2 justify-between">
+              <FaWhatsapp className='text-xl' />
+              Whatsapp
+            </button>
+          </div>
+        </div>
+
 
         {/* Mobile Menu Button */}
         <button
@@ -40,19 +74,7 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex md:ml-auto items-center text-base text-[var(--secondary-color)] justify-center">
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Home</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Contact</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Privacy</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Terms Conditions</Link>
-          <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Refund Policy</Link>
-          {/* <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link> */}
-          {/* <Link className="mr-5 hover:text-gray-900 font-semibold text-2xl flex items-center gap-2" href="#"> <FaCartShopping /></Link> */}
-          
-        </nav>
 
-            
       </div>
 
       {/* Mobile Menu */}
@@ -68,7 +90,7 @@ const Navbar = () => {
           <Link className="mr-5 hover:text-gray-900 font-semibold" href="#">Refund Policy</Link>
 
           {/* <Link className="mr-5 hover:text-gray-900 font-semibold flex items-center gap-2" href="#">0.0$ <FaWallet /></Link> */}
-       </nav>
+        </nav>
       </div>
 
     </header>

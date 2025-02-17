@@ -24,7 +24,7 @@ const Banner = () => {
               <div className="flex items-center gap-2"><MdSecurity />100% Secure</div>
             </div> */}
 
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 my-5">
+            <div className="flex flex-wrap gap-1 my-5 ml-12 lg:ml-0">
               <div className="flex justify-center ">
                 <button className="inline-flex text-white  bg-[var(--secondary-color)] border-0 py-2 px-2 md:px-4  focus:outline-none hover:bg-indigo-600 rounded-xl text-[16px] items-center gap-2 justify-between">
                   <FaTelegram className='text-xl' />

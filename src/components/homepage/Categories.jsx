@@ -15,9 +15,9 @@ const Categories = () => {
           categories?.map((item) => (
             <div
               key={item?.id}
-              className="bg-white shadow-sm md:px-5 rounded-lg border-2 border-purple-600 md:py-5 hover:bg-[var(--primary-color)]  hover:text-white hover:shadow-lg flex justify-around items-center transform transition ease-in-out delay-100 duration-200 hover:scale-105">
+              className="bg-white shadow-sm md:px-5 px-1 rounded-lg border-2 border-purple-600 md:py-5 hover:bg-[var(--primary-color)]  hover:text-white hover:shadow-lg flex gap-2 items-center transform transition ease-in-out delay-100 duration-200 hover:scale-105">
               <img src={item?.icon} className='w-6 md:w-12' alt="" />
-              <p className="text-[8px] md:text-sm text-center my-2 md:font-semibold">{item?.name}</p>
+              <p className="text-[8px] md:text-sm  my-2 md:font-semibold">{item?.name}</p>
             </div>
           ))
         }
