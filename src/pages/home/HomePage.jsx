@@ -9,12 +9,17 @@ import Faq from '../../components/homepage/Faq';
 const HomePage = () => {
   return (
     <div>
-      <Banner />
+      <div className="w-10/12  mx-auto">
+        <Banner />
+      </div>
+
       <Payments />
-      <Categories />
+      <div className="w-11/12 mx-auto">
+        <Categories />
+      </div>
       <FeaturedProduct />
       <WhyBest />
-      <Faq/>
+      <Faq />
     </div>
   );
 };
