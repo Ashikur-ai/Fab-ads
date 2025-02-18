@@ -5,6 +5,7 @@ import Categories from '../../components/homepage/Categories';
 import FeaturedProduct from '../../components/homepage/FeaturedProduct';
 import WhyBest from '../../components/homepage/WhyBest';
 import Faq from '../../components/homepage/Faq';
+import Contact from '../../components/homepage/Contact';
 
 const HomePage = () => {
   return (
@@ -16,10 +17,11 @@ const HomePage = () => {
       <Payments />
       <div className="w-11/12 mx-auto">
         <Categories />
+        <FeaturedProduct />
+        <WhyBest />
+        <Faq />
+        <Contact />
       </div>
-      <FeaturedProduct />
-      <WhyBest />
-      <Faq />
     </div>
   );
 };
